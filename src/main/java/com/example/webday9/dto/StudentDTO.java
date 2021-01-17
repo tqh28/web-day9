@@ -1,6 +1,6 @@
-package com.example.webday9.controller.model;
+package com.example.webday9.dto;
 
-public class StudentResponse {
+public class StudentDTO {
 
 	private int studentId;
 	private String studentName;

@@ -12,25 +12,24 @@ import com.example.webday9.service.StudentService;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-    private StudentRepository studentRepository;
-    private PassportRepository passportRepository;
+	private StudentRepository studentRepository;
+	private PassportRepository passportRepository;
 
-    @Autowired
-    public StudentServiceImpl(StudentRepository studentRepository, PassportRepository passportRepository) {
-        this.studentRepository = studentRepository;
-        this.passportRepository = passportRepository;
-    }
+	@Autowired
+	public StudentServiceImpl(StudentRepository studentRepository, PassportRepository passportRepository) {
+		this.studentRepository = studentRepository;
+		this.passportRepository = passportRepository;
+	}
 
-    @Override
-    public Student findById(int id) {
-        return studentRepository.findById(id);
-    }
+	@Override
+	public Student findById(int id) {
+		return studentRepository.findById(id);
+	}
 
-    @Override
-    @Transactional
-    public void insert(Student s) {
-        passportRepository.insert(s.getPassport());
-        studentRepository.insert(s);
-    }
-
+	@Override
+	@Transactional
+	public void insert(Student s) {
+		passportRepository.insert(s.getPassport());
+		studentRepository.insert(s);
+	}
 }

@@ -1,6 +1,6 @@
-package com.example.webday9.controller.model;
+package com.example.webday9.dto;
 
-public class PassportResponse {
+public class PassportDTO {
 
     private int id;
     private String number;

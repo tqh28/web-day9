@@ -18,4 +18,4 @@ CREATE TABLE STUDENT(
 
 insert into PASSPORT(NUMBER) values ('000A001'), ('000A002');
 
-insert into STUDENT(NAME, PASSPORT_ID) values ('huy tran quang', 1), ('xuyen bui thi kim', 2);
+insert into STUDENT(NAME, PASSPORT_ID) values ('Nguyen Van A', 1), ('Tran Thi B', 2);

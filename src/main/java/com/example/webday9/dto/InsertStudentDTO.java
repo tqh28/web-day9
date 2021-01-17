@@ -1,6 +1,6 @@
-package com.example.webday9.controller.model;
+package com.example.webday9.dto;
 
-public class InsertStudentRequest {
+public class InsertStudentDTO {
 
     private String studentName;
     private String passportNumber;
