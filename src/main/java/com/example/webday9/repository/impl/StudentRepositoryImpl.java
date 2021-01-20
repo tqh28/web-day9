@@ -27,7 +27,6 @@ public class StudentRepositoryImpl implements StudentRepository {
 	@Override
 	public void insert(Student s) {
 		Session session = sessionFactory.getCurrentSession();
-		session.persist(s.getPassport());
 		session.persist(s);
 	}
 
